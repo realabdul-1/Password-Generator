@@ -1,0 +1,126 @@
+:root {
+    --medium-grey: rgba(213, 212, 216, 1);
+    --white: rgba(255, 255, 255, 1);
+    --text-xl-leading-7-font-normal-font-family: "Inter-Regular", Helvetica;
+    --text-xl-leading-7-font-normal-font-weight: 400;
+    --text-xl-leading-7-font-normal-font-size: 20px;
+    --text-xl-leading-7-font-normal-letter-spacing: 0px;
+    --text-xl-leading-7-font-normal-line-height: 28px;
+    --text-xl-leading-7-font-normal-font-style: normal;
+    --text-base-leading-6-font-medium-font-family: "Inter-Medium", Helvetica;
+    --text-base-leading-6-font-medium-font-weight: 500;
+    --text-base-leading-6-font-medium-font-size: 16px;
+    --text-base-leading-6-font-medium-letter-spacing: 0px;
+    --text-base-leading-6-font-medium-line-height: 24px;
+    --text-base-leading-6-font-medium-font-style: normal;
+    --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Hide overflow to prevent the white space issue */
+}
+
+
+.unpopulated-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container to the full height of the viewport */
+    background-color: #1f2937;
+}
+.unpopulated-state .heading {
+    font-family: "Karla-ExtraBold", Helvetica;
+    top: 100px;
+    left: 20;
+    font-weight: 800;
+    color: transparent;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    
+  }
+
+.unpopulated-state .text-wrapper {
+    color: #ffffff;
+  }
+
+.unpopulated-state .span {
+    color: #4adf86;
+  }
+
+.unpopulated-state .supporting-text {
+    font-family: var(--text-xl-leading-7-font-normal-font-family);
+    font-weight: var(--text-xl-leading-7-font-normal-font-weight);
+    color: var(--medium-grey);
+    font-size: var(--text-xl-leading-7-font-normal-font-size);
+    letter-spacing: var(--text-xl-leading-7-font-normal-letter-spacing);
+    line-height: var(--text-xl-leading-7-font-normal-line-height);
+    font-style: var(--text-xl-leading-7-font-normal-font-style);
+    margin-top: 0px;
+  }
+
+.unpopulated-state .button {
+    background-color: #10b981;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px; /* Adjust padding for a better appearance */
+    margin-top: 20px; /* Adjust the margin to separate from the text */
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+  }
+
+.unpopulated-state .text {
+    font-family: var(--text-base-leading-6-font-medium-font-family);
+    font-weight: var(--text-base-leading-6-font-medium-font-weight);
+    color: var(--white);
+    font-size: var(--text-base-leading-6-font-medium-font-size);
+    letter-spacing: var(--text-base-leading-6-font-medium-letter-spacing);
+    line-height: var(--text-base-leading-6-font-medium-line-height);
+  }
+
+.unpopulated-state .line {
+    width: 446px; /* Make the line span the container's width */
+    height: 1px;
+    margin-top: 20px;
+    background-color: #273549
+  }
+
+.unpopulated-state .boxes {
+    display: flex; /* Display the boxes in a row */
+    justify-content: space-between; /* Create space between the boxes */
+    margin-top: 10px; /* Adjust margin as needed */
+    width: 300px;
+} 
+.unpopulated-state .box {
+    flex: 1; /* Make the boxes take equal width */
+    height: 30px; /* Set the height as needed */
+    background-color: #273549;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px; /* Center text vertically */
+    font-size: 15px;
+    margin: 15px; /* Add margin to separate the boxes */
+}
+
+/* Responsive CSS using media queries */
+@media (max-width: 768px) {
+  .unpopulated-state .boxes {
+      flex-direction: column;
+      width: auto;
+  }
+
+  .unpopulated-state .box {
+      margin: 10px;
+      width: auto;
+  }
+
+  .unpopulated-state .heading {
+      font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+
+}
